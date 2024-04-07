@@ -25,17 +25,7 @@ Integration: Keras seamlessly integrates with other Python libraries such as Num
 
 Overall, Keras empowers researchers and developers to iterate quickly on ideas and experiment with various deep learning models, ultimately accelerating the pace of innovation in the field.
 
-How to Create the Model?
-
-We're creating an artificial neural network. It has three layers.
-
-The input layer with enough nodes for our image data.
-A hidden layer with 128 nodes.
-An output layer with 10 nodes, one for each of the classes we want to identify.
-The first layer is doing a bit of data processing for us. It will change the input from a 48x48 matrix to a 2,304 value arary. This allows the input to be densely connected to the next layer. We could have also done this step outside of the model, but we would also have to do the same conversion to the data we are trying to predict before sending it to the trained model. Using the Flatten layer saves us a data preprocessing step during prediction, since that data is also formatted as 48x48 matrixes.
-
-Each layer is densely connected, meaning each neuron in one layer is connected to every neuron in the next layer.
-
+**How to Create the Model?**
 
 To create our artificial neural network model, we'll follow a straightforward process, comprising three layers:
 
