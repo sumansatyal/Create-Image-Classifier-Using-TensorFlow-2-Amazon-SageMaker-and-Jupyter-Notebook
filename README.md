@@ -101,5 +101,32 @@ To inform how the model's weights are adjusted during training, we'll utilize th
 During training, we'll rely solely on accuracy as our evaluation metric. Accuracy measures the proportion of correctly predicted instances among the total instances, providing a straightforward assessment of the model's performance in classifying the input data.
 
 By specifying these configurations during compilation, we ensure that our neural network model is trained using an efficient optimization algorithm, guided by an appropriate loss function for multi-class classification, and evaluated based on its accuracy in making predictions. This comprehensive setup helps in training a robust and effective model for our specific task.
+...........................
+
+In the context of the Keras API within Amazon SageMaker, let's delve into the three key components: the Adam optimization algorithm, the Sparse Categorical Cross-Entropy loss function, and accuracy.
+
+**Adam Optimization Algorithm:**
+
+Adam is an adaptive optimization algorithm commonly used for training deep learning models. It combines the benefits of both momentum-based optimization and adaptive learning rate methods.
+In SageMaker's Keras API, developers can specify Adam as the optimization algorithm when compiling their neural network model. This is typically done using a line of code like model.compile(optimizer='adam', ...).
+Adam dynamically adjusts the learning rates of individual model parameters based on the first and second moments of gradients, allowing for faster convergence and improved optimization performance, especially in scenarios with non-stationary objectives and noisy gradients.
+By utilizing Adam, developers can effectively train deep learning models in SageMaker with improved efficiency and effectiveness, particularly when dealing with large-scale datasets and complex architectures.
+
+**Sparse Categorical Cross-Entropy Loss Function:**
+
+The Sparse Categorical Cross-Entropy loss function is commonly used for multi-class classification tasks, where each data point belongs to exactly one class.
+In SageMaker's Keras API, developers can specify the Sparse Categorical Cross-Entropy loss function when compiling their model. This is typically done using a line of code like model.compile(loss='sparse_categorical_crossentropy', ...).
+This loss function calculates the cross-entropy between the true class labels and the predicted class probabilities, penalizing the model based on the discrepancy between the two distributions. It's particularly suited for scenarios where the target labels are provided as integers representing class indices, as opposed to one-hot encoded vectors.
+By using the Sparse Categorical Cross-Entropy loss function, developers can effectively train classification models in SageMaker, optimizing them to accurately predict the correct class labels for unseen data.
+
+**Accuracy:**
+
+Accuracy is a commonly used evaluation metric for classification tasks, representing the proportion of correctly classified instances out of the total instances.
+In SageMaker's Keras API, developers can specify accuracy as the evaluation metric when compiling their model. This is typically done using a line of code like model.compile(..., metrics=['accuracy']).
+During model training, accuracy is monitored and reported, providing insights into the model's performance on the training and validation datasets.
+By optimizing for accuracy, developers aim to train models that can effectively generalize to unseen data, correctly predicting the correct class labels with high confidence.
+In summary, within the Keras API in Amazon SageMaker, developers can leverage the Adam optimization algorithm, the Sparse Categorical Cross-Entropy loss function, and accuracy as evaluation metrics to effectively train and evaluate deep learning models for various classification tasks. These components play crucial roles in optimizing model performance and achieving accurate predictions on real-world datasets.
+
+...........................
 
 This lab was part of the lab work for Machine Learning Certification in a cloud guru.
