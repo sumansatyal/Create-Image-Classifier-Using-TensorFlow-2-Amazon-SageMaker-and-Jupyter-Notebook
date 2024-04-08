@@ -56,13 +56,17 @@ Overall, TensorFlow is a powerful framework for building machine learning models
 **Keras**
 Keras is a high-level neural networks API written in Python, designed to facilitate rapid experimentation in deep learning. It allows developers to quickly prototype and build neural network models with minimal code. Key features of Keras include:
 
-Simplicity: Keras provides a user-friendly interface for defining neural networks, making it accessible to both beginners and experienced deep learning practitioners.
-Modularity: Neural network models in Keras are built as sequences of layers, which can be easily added, removed, or interconnected to create complex architectures.
-Flexibility: Keras supports multiple backends, including TensorFlow, CNTK, and Theano, allowing users to leverage the strengths of different frameworks while using a consistent API.
-Ease of Use: With its clear and intuitive syntax, Keras enables researchers and developers to focus on experimenting with different network architectures and hyperparameters without getting bogged down in implementation details.
-Integration: Keras seamlessly integrates with other Python libraries such as NumPy and SciPy, as well as with tools like TensorFlow's TensorBoard for visualization and monitoring of training progress.
+*Simplicity:* Keras provides a user-friendly interface for defining neural networks, making it accessible to both beginners and experienced deep learning practitioners.
 
-Overall, Keras empowers researchers and developers to iterate quickly on ideas and experiment with various deep learning models, ultimately accelerating the pace of innovation in the field.
+*Modularity:* Neural network models in Keras are built as sequences of layers, which can be easily added, removed, or interconnected to create complex architectures.
+
+*Flexibility:* Keras supports multiple backends, including TensorFlow, CNTK, and Theano, allowing users to leverage the strengths of different frameworks while using a consistent API.
+
+*Ease of Use:* With its clear and intuitive syntax, Keras enables researchers and developers to focus on experimenting with different network architectures and hyperparameters without getting bogged down in implementation details.
+
+*Integration:* Keras seamlessly integrates with other Python libraries such as NumPy and SciPy, as well as with tools like TensorFlow's TensorBoard for visualization and monitoring of training progress.
+
+Overall, Keras empowers researchers and developers to iterate quickly on ideas and experiment with various deep-learning models, ultimately accelerating the pace of innovation in the field.
 
 **How to Create the Model?**
 
