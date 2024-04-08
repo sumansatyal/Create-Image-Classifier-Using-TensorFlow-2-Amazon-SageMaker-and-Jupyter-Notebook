@@ -54,7 +54,8 @@ TensorFlow is an open-source machine learning framework developed by Google. It 
 Overall, TensorFlow is a powerful framework for building machine learning models, from simple prototypes to complex production systems, and it continues to evolve with advancements in the field.
 
 **Keras**
-Keras is a high-level neural networks API written in Python, designed to facilitate rapid experimentation in deep learning. It allows developers to quickly prototype and build neural network models with minimal code. Key features of Keras include:
+
+*Keras* is a high-level neural networks API written in Python, designed to facilitate rapid experimentation in deep learning. It allows developers to quickly prototype and build neural network models with minimal code. Key features of Keras include:
 
 *Simplicity:* Keras provides a user-friendly interface for defining neural networks, making it accessible to both beginners and experienced deep learning practitioners.
 
