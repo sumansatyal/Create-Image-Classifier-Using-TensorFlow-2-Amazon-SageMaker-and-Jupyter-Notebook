@@ -3,7 +3,7 @@ Upload the Data Files
 
 **Framework:** TensorFlow 2 and Keras API within TensorFlow are used to build and train a model that classifies images.
 
-**SageMaker**
+**What is Amazon SageMaker?**
 
 *Amazon SageMaker* is a fully managed machine learning service provided by Amazon Web Services (AWS) that enables developers and data scientists to build, train, and deploy machine learning models at scale. It offers a comprehensive suite of tools and capabilities designed to streamline the entire machine learning workflow, from data preparation to model deployment, while also providing scalability, flexibility, and cost-efficiency. Let's explore its key features and components in detail:
 
@@ -37,19 +37,19 @@ SageMaker incorporates security best practices and compliance standards to safeg
 SageMaker seamlessly integrates with other AWS services, such as S3 for data storage, AWS Glue for data cataloging, AWS Lambda for serverless computing, and AWS Step Functions for orchestrating machine learning workflows. This enables users to leverage the full capabilities of the AWS ecosystem for end-to-end machine-learning solutions.
 Overall, Amazon SageMaker simplifies and accelerates the machine learning lifecycle, from data preparation and model training to deployment and monitoring, empowering organizations to drive innovation and derive actionable insights from their data at scale.
 
-**TensorFlow**
+**What is TensorFlow?**
 
 TensorFlow is an open-source machine learning framework developed by Google. It provides a comprehensive ecosystem of tools, libraries, and resources for building and deploying machine learning models. TensorFlow supports various tasks such as classification, regression, clustering, and deep learning. Key features of TensorFlow include:
 
-Flexibility: TensorFlow offers flexibility in building machine learning models with its high-level APIs like Keras for quick prototyping and low-level APIs for advanced customization.
+*Flexibility:* TensorFlow offers flexibility in building machine learning models with its high-level APIs like Keras for quick prototyping and low-level APIs for advanced customization.
 
-Scalability: TensorFlow is designed to scale efficiently, allowing users to train and deploy models on various platforms, from mobile devices to distributed systems.
+*Scalability:* TensorFlow is designed to scale efficiently, allowing users to train and deploy models on various platforms, from mobile devices to distributed systems.
 
-TensorBoard: TensorFlow includes TensorBoard, a visualization tool that helps users analyze and debug models through interactive dashboards.
+*TensorBoard:* TensorFlow includes TensorBoard, a visualization tool that helps users analyze and debug models through interactive dashboards.
 
-Community and Ecosystem: TensorFlow has a vibrant community and a rich ecosystem of pre-built models, tutorials, and resources to accelerate development.
+*Community and Ecosystem:* TensorFlow has a vibrant community and a rich ecosystem of pre-built models, tutorials, and resources to accelerate development.
 
-Cross-Platform Compatibility: TensorFlow supports multiple programming languages such as Python, C++, and JavaScript, making it accessible to a wide range of developers.
+*Cross-Platform Compatibility:* TensorFlow supports multiple programming languages such as Python, C++, and JavaScript, making it accessible to a wide range of developers.
 
 Overall, TensorFlow is a powerful framework for building machine learning models, from simple prototypes to complex production systems, and it continues to evolve with advancements in the field.
 
@@ -70,8 +70,8 @@ To create our artificial neural network model, we'll follow a straightforward pr
 
 **Input Layer:**
 We start with an input layer, tailored to accommodate our image data adequately. Since our images are represented as 48x48 matrices, we'll configure this layer to have enough nodes to capture this information comprehensively.
-Additionally, we'll incorporate a Flatten layer, which transforms the input data from its matrix form into a flat array of 2,304 values. This conversion enables seamless connectivity with the subsequent layer.
-The Flatten layer streamlines the data preprocessing phase, eliminating the need for external conversion steps during prediction. This is particularly beneficial as incoming data for prediction is also structured as 48x48 matrices.
+Additionally, we'll incorporate a flattened layer, which transforms the input data from its matrix form into a flat array of 2,304 values. This conversion enables seamless connectivity with the subsequent layer.
+The flattened layer streamlines the data preprocessing phase, eliminating the need for external conversion steps during prediction. This is particularly beneficial as incoming data for prediction is also structured as 48x48 matrices.
 
 **Hidden Layer:**
 Following the input layer, we introduce a hidden layer consisting of 128 nodes. This layer serves as an intermediary processing stage, where complex patterns and features within the data are extracted and analyzed.
