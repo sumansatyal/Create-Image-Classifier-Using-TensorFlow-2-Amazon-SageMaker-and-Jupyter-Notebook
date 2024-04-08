@@ -51,9 +51,11 @@ When compiling our neural network model, we'll specify several key configuration
 We'll employ the Adam optimization algorithm, a variant of stochastic gradient descent (SGD). Adam dynamically adjusts learning rates for each parameter, facilitating faster convergence and improved optimization performance.
 
 **Loss Function:**
-To inform how the model's weights are adjusted during training, we'll utilize the Sparse Categorical Cross-Entropy loss function. This function is particularly suitable for scenarios with multiple categories, such as our classification task. It measures the disparity between predicted and actual class distributions, guiding the optimization process towards minimizing classification errors effectively.
+To inform how the model's weights are adjusted during training, we'll utilize the Sparse Categorical Cross-Entropy loss function. This function is particularly suitable for scenarios with multiple categories, such as our classification task. It measures the disparity between predicted and actual class distributions, guiding the optimization process toward minimizing classification errors effectively.
 
 **Evaluation Metric:**
 During training, we'll rely solely on accuracy as our evaluation metric. Accuracy measures the proportion of correctly predicted instances among the total instances, providing a straightforward assessment of the model's performance in classifying the input data.
 
 By specifying these configurations during compilation, we ensure that our neural network model is trained using an efficient optimization algorithm, guided by an appropriate loss function for multi-class classification, and evaluated based on its accuracy in making predictions. This comprehensive setup helps in training a robust and effective model for our specific task.
+
+This lab was part of the lab work for Machine Learning Certification in a cloud guru.
