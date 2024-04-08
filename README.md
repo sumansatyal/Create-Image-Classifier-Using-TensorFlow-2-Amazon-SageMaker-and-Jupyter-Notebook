@@ -101,7 +101,8 @@ To inform how the model's weights are adjusted during training, we'll utilize th
 During training, we'll rely solely on accuracy as our evaluation metric. Accuracy measures the proportion of correctly predicted instances among the total instances, providing a straightforward assessment of the model's performance in classifying the input data.
 
 By specifying these configurations during compilation, we ensure that our neural network model is trained using an efficient optimization algorithm, guided by an appropriate loss function for multi-class classification, and evaluated based on its accuracy in making predictions. This comprehensive setup helps in training a robust and effective model for our specific task.
-...........................
+
+..................................................................
 
 In the context of the Keras API within Amazon SageMaker, let's delve into the three key components: the Adam optimization algorithm, the Sparse Categorical Cross-Entropy loss function, and accuracy.
 
@@ -127,6 +128,6 @@ During model training, accuracy is monitored and reported, providing insights in
 By optimizing for accuracy, developers aim to train models that can effectively generalize to unseen data, correctly predicting the correct class labels with high confidence.
 In summary, within the Keras API in Amazon SageMaker, developers can leverage the Adam optimization algorithm, the Sparse Categorical Cross-Entropy loss function, and accuracy as evaluation metrics to effectively train and evaluate deep learning models for various classification tasks. These components play crucial roles in optimizing model performance and achieving accurate predictions on real-world datasets.
 
-...........................
+...................................................................
 
 This lab was part of the lab work for Machine Learning Certification in a cloud guru.
